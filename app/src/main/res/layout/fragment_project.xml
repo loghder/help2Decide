@@ -1,0 +1,78 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:wheelSurfView="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/frameLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.ProjectFragment">
+
+    <com.qmuiteam.qmui.widget.QMUITopBar
+        android:id="@+id/Topbar2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:qmui_topbar_bg_color="@color/qmui_config_color_blue"
+        app:qmui_topbar_title_color="@android:color/white"></com.qmuiteam.qmui.widget.QMUITopBar>
+
+    <com.cretin.www.wheelsruflibrary.view.WheelSurfView
+        android:id="@+id/wheelSurfView2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="60dp"
+        app:layout_constraintBottom_toTopOf="@+id/textNotice"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Topbar2"
+        wheelSurfView:goImg="@drawable/node"
+        wheelSurfView:huanImg="@drawable/yuanhuan"
+        wheelSurfView:typenum="-1" />
+
+    <cn.jiguang.imui.messages.MessageList
+        android:id="@+id/msg_list"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/bg"
+        app:avatarHeight="50dp"
+        app:avatarWidth="50dp"
+        app:bubbleMaxWidth="0.70"
+        app:dateTextSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/textNotice"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Topbar2"
+        app:receiveBubbleColor="@color/qmui_config_color_blue"
+        app:receiveBubblePaddingLeft="20dp"
+        app:receiveBubblePaddingRight="10dp"
+        app:receiveTextColor="#ffffff"
+        app:receiveTextSize="18sp"
+        app:sendBubblePaddingLeft="10dp"
+        app:sendBubblePaddingRight="20dp"
+        app:sendTextColor="@color/qmui_config_color_blue"
+        app:sendTextSize="18sp" />
+
+    <TextView
+        android:id="@+id/textNotice"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/qmui_config_color_10_pure_black"
+        android:gravity="center"
+        android:text="点击下方方案做出决定"
+        android:textColor="@color/qmui_config_color_60_pure_black"
+        app:layout_constraintBottom_toTopOf="@+id/sxRecyclerView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/msg_list" />
+
+    <czm.android.support.v7.widget.SXRecyclerView
+        android:id="@+id/sxRecyclerView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textNotice"></czm.android.support.v7.widget.SXRecyclerView>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+     <item name="topbar_right_about_button" type="id"/>
+     <item name="topbar_right_plus_button" type="id"/>
+     <item name="topbar_right_setting_button" type="id"/>
+     <item name="topbar_right_register_button" type="id"/>
+     <item name="loginButton" type="id"/>
+     <item name="aboutButton" type="id"/>
+     <item name="upButton" type="id"/>
+     <item name="downButton" type="id"/>
+     <item name="historyButton" type="id"/>
+     <item name="modeButton" type="id"/>
+     <item name="rightImageButton" type="id"/>
+</resources>
